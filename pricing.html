@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Packages & Pricing | Kashi Beauty Salon Lahore</title>
+  <meta name="description" content="View pricing tables for hair extensions, coloring, facials, party makeup, and bridal packages at Kashi Beauty Salon Lahore. Transparent, premium value.">
+  <meta name="keywords" content="Best Beauty Salon Lahore, Makeup Packages Lahore, Hydra Facial Price Lahore, Balayage Cost Johar Town">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <nav class="header-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        KASHI
+        <span>Beauty Salon</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="bridal.html">Bridal Studio</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="pricing.html" class="active">Pricing</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn btn-gold-outline" onclick="openBookingModal()">Book Appointment</button>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <ul class="nav-links-mobile">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="bridal.html">Bridal Studio</a></li>
+      <li><a href="catalogue.html">Catalogue</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><button class="btn btn-primary" onclick="openBookingModal()" style="margin-top: 15px; width: 100%;">Book Appointment</button></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" style="height: 50vh; background-image: linear-gradient(rgba(13,13,13,0.85), rgba(13,13,13,0.85)), url('images/salon_interior.png');">
+    <div class="hero-content">
+      <span class="hero-tagline reveal">Transparent Luxury</span>
+      <h1 class="reveal" style="font-size: 3rem;">Pricing & Packages</h1>
+      <p class="hero-subtitle reveal">Uncompromising service quality with transparent, premium valuations</p>
+    </div>
+  </section>
+
+  <!-- Pricing Tables Section -->
+  <section class="bg-light">
+    <div class="container">
+      
+      <!-- Bridal Packages -->
+      <div class="section-header">
+        <span>The Signature Suite</span>
+        <h2>Bridal & Makeup Packages</h2>
+      </div>
+      
+      <div class="pricing-grid" style="margin-bottom: 80px;">
+        <div class="pricing-card reveal">
+          <h3>Engagement Glam</h3>
+          <p class="pricing-desc">Perfect for Engagement or Nikkah events</p>
+          <div class="pricing-price">PKR 25,000</div>
+          <ul class="pricing-list" style="color: #444;">
+            <li><i class="fa-solid fa-circle-check"></i> HD Nikkah Makeup</li>
+            <li><i class="fa-solid fa-circle-check"></i> Premium Hair Updo</li>
+            <li><i class="fa-solid fa-circle-check"></i> Dupata & Jewelry Setting</li>
+            <li><i class="fa-solid fa-circle-check"></i> Imported 3D Lashes</li>
+          </ul>
+          <button class="btn btn-gold-outline" onclick="openBookingModal('Engagement Makeup')">Book Package</button>
+        </div>
+        
+        <div class="pricing-card featured reveal">
+          <div class="pricing-badge">Best Seller</div>
+          <h3>Signature Bride</h3>
+          <p class="pricing-desc">Premium Baran/Shaadi beauty suite</p>
+          <div class="pricing-price" style="color: var(--primary-gold);">PKR 45,000</div>
+          <ul class="pricing-list">
+            <li><i class="fa-solid fa-circle-check"></i> Signature HD Bridal Makeup</li>
+            <li><i class="fa-solid fa-circle-check"></i> Custom Hair Artistry / Fresh Flowers</li>
+            <li><i class="fa-solid fa-circle-check"></i> Complete Jewelry & Dupata Setting</li>
+            <li><i class="fa-solid fa-circle-check"></i> 3D Custom Mink Lashes</li>
+            <li><i class="fa-solid fa-circle-check"></i> Free pre-wedding skin consultation</li>
+          </ul>
+          <button class="btn btn-primary" onclick="openBookingModal('Bridal Makeup Package')">Book Package</button>
+        </div>
+
+        <div class="pricing-card reveal">
+          <h3>Valima Elegance</h3>
+          <p class="pricing-desc">Sleek, glamorous Valima look</p>
+          <div class="pricing-price">PKR 35,000</div>
+          <ul class="pricing-list" style="color: #444;">
+            <li><i class="fa-solid fa-circle-check"></i> Airbrush / HD Valima Makeup</li>
+            <li><i class="fa-solid fa-circle-check"></i> Luxury Hair styling / Updo</li>
+            <li><i class="fa-solid fa-circle-check"></i> Jewelry & Outfit Setting</li>
+            <li><i class="fa-solid fa-circle-check"></i> Custom contouring base</li>
+          </ul>
+          <button class="btn btn-gold-outline" onclick="openBookingModal('Reception Makeup')">Book Package</button>
+        </div>
+      </div>
+
+      <!-- Hair & Skin Packages -->
+      <div class="section-header">
+        <span>Rejuvenate & Style</span>
+        <h2>Hair & Skin Care Packages</h2>
+      </div>
+
+      <div class="pricing-grid" style="margin-bottom: 80px;">
+        <div class="pricing-card reveal">
+          <h3>Gloss & Glow</h3>
+          <p class="pricing-desc">Essential hair and skin revitalizer</p>
+          <div class="pricing-price">PKR 10,000</div>
+          <ul class="pricing-list" style="color: #444;">
+            <li><i class="fa-solid fa-circle-check"></i> 24k Gold Facial</li>
+            <li><i class="fa-solid fa-circle-check"></i> Hair Spa Treatment</li>
+            <li><i class="fa-solid fa-circle-check"></i> Standard Blowdry & Styling</li>
+            <li><i class="fa-solid fa-circle-check"></i> Threading (Eyebrows + Upperlip)</li>
+          </ul>
+          <button class="btn btn-gold-outline" onclick="openBookingModal('Gloss & Glow')">Book Package</button>
+        </div>
+        
+        <div class="pricing-card featured reveal">
+          <div class="pricing-badge">Luxury Glow</div>
+          <h3>Hydra-Glow Signature</h3>
+          <p class="pricing-desc">Advanced dermatologist skin & hair suite</p>
+          <div class="pricing-price" style="color: var(--primary-gold);">PKR 16,500</div>
+          <ul class="pricing-list">
+            <li><i class="fa-solid fa-circle-check"></i> Advanced Hydra Facial</li>
+            <li><i class="fa-solid fa-circle-check"></i> Premium Manicure & Pedicure</li>
+            <li><i class="fa-solid fa-circle-check"></i> L'Oreal Hair Spa / Repair Mask</li>
+            <li><i class="fa-solid fa-circle-check"></i> Precise Haircut & Styling</li>
+          </ul>
+          <button class="btn btn-primary" onclick="openBookingModal('Hydra-Glow Signature')">Book Package</button>
+        </div>
+
+        <div class="pricing-card reveal">
+          <h3>Absolute Smooth</h3>
+          <p class="pricing-desc">Hair restructuring & therapy suite</p>
+          <div class="pricing-price">PKR 22,000</div>
+          <ul class="pricing-list" style="color: #444;">
+            <li><i class="fa-solid fa-circle-check"></i> Keratin Smoothing Treatment</li>
+            <li><i class="fa-solid fa-circle-check"></i> Hair Cut & Customized Styling</li>
+            <li><i class="fa-solid fa-circle-check"></i> Post-Keratin Wash & Protection</li>
+            <li><i class="fa-solid fa-circle-check"></i> Free Keratin shampoo advice</li>
+          </ul>
+          <button class="btn btn-gold-outline" onclick="openBookingModal('Absolute Smooth')">Book Package</button>
+        </div>
+      </div>
+
+      <!-- Monthly Promotions -->
+      <div class="reveal" style="background: var(--luxury-gray); border: 1px solid var(--primary-gold); padding: 50px; text-align: center; color: var(--white);">
+        <span class="gold-text uppercase letter-spacing-wide" style="font-size: 0.8rem; font-weight: 600;">Limited Time Offer</span>
+        <h3 style="font-size: 2.2rem; margin-top: 10px; margin-bottom: 15px;">Midsummer Glow Promo &bull; 20% Off</h3>
+        <p style="max-width: 700px; margin: 0 auto 30px auto; font-weight: 300; font-size: 0.95rem; color: var(--text-light);">Get 20% flat discount on all hair highlights, balayage, and advanced skin whitening facials. Offer valid till July 15, 2026. Book your slot now!</p>
+        <button class="btn btn-primary" onclick="openBookingModal('Summer Promo')">Claim Discount Slot</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>KASHI</h3>
+        <span>Beauty Salon</span>
+        <p>Premium salon and high-end bridal studio located in Lahore, Pakistan. Dedicated to excellence, hygiene, and timeless beauty.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/kashibeautician/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/kashibeautician" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@kashibeautysalon" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services & Packages</a></li>
+          <li><a href="bridal.html">Bridal Studio</a></li>
+          <li><a href="catalogue.html">Makeup Catalogue</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Other Pages</h4>
+        <ul class="footer-links">
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="team.html">Professional Team</a></li>
+          <li><a href="pricing.html">Pricing Tables</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="blog.html">Beauty Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p><i class="fa-solid fa-location-dot" style="color: var(--primary-gold); margin-right: 10px;"></i>Shop #50, Block H-2, Phase 2 Johar Town, Lahore, 54782, Pakistan</p>
+        <p><i class="fa-solid fa-phone" style="color: var(--primary-gold); margin-right: 10px;"></i>+92 313 4747538</p>
+        <p><i class="fab fa-whatsapp" style="color: var(--primary-gold); margin-right: 10px;"></i>WhatsApp Booking: +92 313 4747538</p>
+        <p><i class="fa-solid fa-clock" style="color: var(--primary-gold); margin-right: 10px;"></i>11:00 AM - 09:00 PM (Daily)</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2026 Kashi Beauty Salon. All Rights Reserved. Crafted with Luxury & Excellence.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/923134747538" class="floating-whatsapp" target="_blank" aria-label="Book on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Shared Booking Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <h3>Luxury Reservation</h3>
+      <p>Reserve your premium slot. Details will compile into a direct WhatsApp message to our reception desk.</p>
+      <form id="salonBookingForm">
+        <div class="form-group">
+          <label for="modalName">Your Name *</label>
+          <input type="text" id="modalName" class="form-control" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="modalPhone">Phone Number *</label>
+          <input type="tel" id="modalPhone" class="form-control" placeholder="e.g. +92 300 1234567" required>
+        </div>
+        <div class="form-group">
+          <label for="modalService">Select Service *</label>
+          <select id="modalService" class="form-control" required>
+            <option value="" disabled selected>Select a luxury service...</option>
+            <option value="Bridal Makeup Package">Bridal Makeup Package</option>
+            <option value="Engagement Makeup">Engagement Makeup</option>
+            <option value="Reception Makeup">Reception Makeup</option>
+            <option value="Party Makeup">Party Makeup / Soft Glam</option>
+            <option value="Hair Styling & Cut">Hair Styling & Cut</option>
+            <option value="Hair Color / Highlights">Hair Color / Balayage / Highlights</option>
+            <option value="Hydra Facial Treatment">Hydra Facial Treatment</option>
+            <option value="Luxury Manicure & Pedicure">Luxury Manicure & Pedicure</option>
+            <option value="General Beauty Spa Care">General Beauty Services</option>
+          </select>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div class="form-group">
+            <label for="modalDate">Preferred Date *</label>
+            <input type="date" id="modalDate" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="modalTime">Preferred Time *</label>
+            <input type="time" id="modalTime" class="form-control" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="modalNotes">Special Notes</label>
+          <textarea id="modalNotes" class="form-control" rows="3" placeholder="Any specific requirements or questions?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Send Reservation Details to WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

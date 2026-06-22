@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Services & Spa Treatments | Kashi Beauty Salon Lahore</title>
+  <meta name="description" content="Explore Kashi Beauty Salon's services: Hair styling, bridal makeup, HD makeup, advanced Hydra Facials, waxing, manicures, and customized packages in Lahore.">
+  <meta name="keywords" content="Best Beauty Salon Lahore, Hair Salon Johar Town, Bridal Makeup Lahore, Hydra Facial Lahore, Hair Extensions Lahore">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <nav class="header-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        KASHI
+        <span>Beauty Salon</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="bridal.html">Bridal Studio</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn btn-gold-outline" onclick="openBookingModal()">Book Appointment</button>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <ul class="nav-links-mobile">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="bridal.html">Bridal Studio</a></li>
+      <li><a href="catalogue.html">Catalogue</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><button class="btn btn-primary" onclick="openBookingModal()" style="margin-top: 15px; width: 100%;">Book Appointment</button></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" style="height: 50vh; background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('images/hair_styling.png');">
+    <div class="hero-content">
+      <span class="hero-tagline reveal">Our Indulgent Menu</span>
+      <h1 class="reveal" style="font-size: 3rem;">Salon Services</h1>
+      <p class="hero-subtitle reveal">Tailored services blending science, luxury, and artistry</p>
+    </div>
+  </section>
+
+  <!-- Hair Services Section -->
+  <section class="bg-light" id="hair">
+    <div class="container">
+      <div class="section-header">
+        <span>Artistry in Locks</span>
+        <h2>Hair Services</h2>
+      </div>
+      
+      <div class="services-list-grid">
+        <!-- Service Row Item 1 -->
+        <div class="service-item-row reveal">
+          <div class="service-item-image" style="background-image: url('images/hair_styling.png');"></div>
+          <div class="service-item-details">
+            <div>
+              <div class="service-item-header">
+                <h4>Hair Styling & Blow Dry</h4>
+                <span class="service-price">PKR 3,500</span>
+              </div>
+              <p class="service-desc">Signature blow-dries, sleek straightening, or luxury curls tailored for dinners and formal events.</p>
+            </div>
+            <div class="service-meta">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> 45 Mins</span>
+              <button class="btn btn-gold-outline" style="padding: 8px 18px; font-size: 0.7rem;" onclick="openBookingModal('Hair Styling')">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Row Item 2 -->
+        <div class="service-item-row reveal">
+          <div class="service-item-image" style="background-image: url('images/hair_styling.png');"></div>
+          <div class="service-item-details">
+            <div>
+              <div class="service-item-header">
+                <h4>Balayage & Hair Color</h4>
+                <span class="service-price">PKR 18,500</span>
+              </div>
+              <p class="service-desc">Premium highlights, global tints, and balayage using L'Oreal Professional and Schwarzkopf products.</p>
+            </div>
+            <div class="service-meta">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> 180 Mins</span>
+              <button class="btn btn-gold-outline" style="padding: 8px 18px; font-size: 0.7rem;" onclick="openBookingModal('Hair Color')">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Row Item 3 -->
+        <div class="service-item-row reveal">
+          <div class="service-item-image" style="background-image: url('images/hair_styling.png');"></div>
+          <div class="service-item-details">
+            <div>
+              <div class="service-item-header">
+                <h4>Keratin Treatment</h4>
+                <span class="service-price">PKR 16,000</span>
+              </div>
+              <p class="service-desc">Smoothing therapy that eliminates frizz, restores damaged cuticles, and boosts natural shine.</p>
+            </div>
+            <div class="service-meta">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> 120 Mins</span>
+              <button class="btn btn-gold-outline" style="padding: 8px 18px; font-size: 0.7rem;" onclick="openBookingModal('Keratin Treatment')">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Row Item 4 -->
+        <div class="service-item-row reveal">
+          <div class="service-item-image" style="background-image: url('images/hair_styling.png');"></div>
+          <div class="service-item-details">
+            <div>
+              <div class="service-item-header">
+                <h4>Hair Extensions</h4>
+                <span class="service-price">PKR 25,000</span>
+              </div>
+              <p class="service-desc">High-quality 100% natural human hair extensions for custom length, bounce, and thickness.</p>
+            </div>
+            <div class="service-meta">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> 90 Mins</span>
+              <button class="btn btn-gold-outline" style="padding: 8px 18px; font-size: 0.7rem;" onclick="openBookingModal('Hair Extensions')">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Makeup Services Section -->
+  <section id="makeup">
+    <div class="container">
+      <div class="section-header">
+        <span>The Signature Glow</span>
+        <h2>Makeup Artistry</h2>
+      </div>
+      
+      <div class="services-list-grid">
+        <!-- Service Row Item 1 -->
+        <div class="service-item-row reveal" style="background: var(--luxury-gray);">
+          <div class="service-item-image" style="background-image: url('images/bridal_makeup.png');"></div>
+          <div class="service-item-details">
+            <div>
+              <div class="service-item-header">
+                <h4>Signature Bridal Makeup</h4>
+                <span class="service-price">PKR 45,000</span>
+              </div>
+              <p class="service-desc" style="color: var(--text-muted);">High-Definition custom bridal look, including hair styling, jewelry setting, and dupata pinning.</p>
+            </div>
+            <div class="service-meta">
+              <span class="service-duration" style="color: var(--white);"><i class="fa-regular fa-clock"></i> 180 Mins</span>
+              <button class="btn btn-primary" style="padding: 8px 18px; font-size: 0.7rem;" onclick="openBookingModal('Bridal Makeup')">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Row Item 2 -->
+        <div class="service-item-row reveal" style="background: var(--luxury-gray);">
+          <div class="service-item-image" style="background-image: url('images/bridal_makeup.png');"></div>
+          <div class="service-item-details">
+            <div>
+              <div class="service-item-header">
+                <h4>Engagement / Nikkah Glam</h4>
+                <span class="service-price">PKR 25,000</span>
+              </div>
+              <p class="service-desc" style="color: var(--text-muted);">Soft glow makeup paired with fresh flower hair styling for a dreamlike engagement aura.</p>
+            </div>
+            <div class="service-meta">
+              <span class="service-duration" style="color: var(--white);"><i class="fa-regular fa-clock"></i> 120 Mins</span>
+              <button class="btn btn-primary" style="padding: 8px 18px; font-size: 0.7rem;" onclick="openBookingModal('Engagement Makeup')">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Row Item 3 -->
+        <div class="service-item-row reveal" style="background: var(--luxury-gray);">
+          <div class="service-item-image" style="background-image: url('images/bridal_makeup.png');"></div>
+          <div class="service-item-details">
+            <div>
+              <div class="service-item-header">
+                <h4>Reception / Valima Makeover</h4>
+                <span class="service-price">PKR 35,000</span>
+              </div>
+              <p class="service-desc" style="color: var(--text-muted);">Sleek, glamorous look, custom contours, and elegant styling optimized for dinner photography.</p>
+            </div>
+            <div class="service-meta">
+              <span class="service-duration" style="color: var(--white);"><i class="fa-regular fa-clock"></i> 150 Mins</span>
+              <button class="btn btn-primary" style="padding: 8px 18px; font-size: 0.7rem;" onclick="openBookingModal('Reception Makeup')">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Row Item 4 -->
+        <div class="service-item-row reveal" style="background: var(--luxury-gray);">
+          <div class="service-item-image" style="background-image: url('images/bridal_makeup.png');"></div>
+          <div class="service-item-details">
+            <div>
+              <div class="service-item-header">
+                <h4>Party Makeup & Soft Glam</h4>
+                <span class="service-price">PKR 12,000</span>
+              </div>
+              <p class="service-desc" style="color: var(--text-muted);">Luminous finish, custom soft eyeshadow blends, and hairstyling for parties and festivals.</p>
+            </div>
+            <div class="service-meta">
+              <span class="service-duration" style="color: var(--white);"><i class="fa-regular fa-clock"></i> 75 Mins</span>
+              <button class="btn btn-primary" style="padding: 8px 18px; font-size: 0.7rem;" onclick="openBookingModal('Party Makeup')">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skin Services Section -->
+  <section class="bg-light" id="skin">
+    <div class="container">
+      <div class="section-header">
+        <span>Scientific Skin Therapy</span>
+        <h2>Skin Services</h2>
+      </div>
+      
+      <div class="services-list-grid">
+        <!-- Service Row Item 1 -->
+        <div class="service-item-row reveal">
+          <div class="service-item-image" style="background-image: url('images/salon_interior.png');"></div>
+          <div class="service-item-details">
+            <div>
+              <div class="service-item-header">
+                <h4>Advanced Hydra Facial</h4>
+                <span class="service-price">PKR 8,500</span>
+              </div>
+              <p class="service-desc">Multi-step deep cleaning, exfoliation, blackhead extraction, and custom serum infusions using pure oxygen jet sprays.</p>
+            </div>
+            <div class="service-meta">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> 60 Mins</span>
+              <button class="btn btn-gold-outline" style="padding: 8px 18px; font-size: 0.7rem;" onclick="openBookingModal('Hydra Facial')">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Row Item 2 -->
+        <div class="service-item-row reveal">
+          <div class="service-item-image" style="background-image: url('images/salon_interior.png');"></div>
+          <div class="service-item-details">
+            <div>
+              <div class="service-item-header">
+                <h4>24k Gold Facial</h4>
+                <span class="service-price">PKR 6,500</span>
+              </div>
+              <p class="service-desc">A classic luxury facial using pure gold dust masks and leafing to lock in moisture, reduce fine lines, and boost bright glow.</p>
+            </div>
+            <div class="service-meta">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> 75 Mins</span>
+              <button class="btn btn-gold-outline" style="padding: 8px 18px; font-size: 0.7rem;" onclick="openBookingModal('Gold Facial')">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Row Item 3 -->
+        <div class="service-item-row reveal">
+          <div class="service-item-image" style="background-image: url('images/salon_interior.png');"></div>
+          <div class="service-item-details">
+            <div>
+              <div class="service-item-header">
+                <h4>Dermal Whitening Treatment</h4>
+                <span class="service-price">PKR 7,500</span>
+              </div>
+              <p class="service-desc">Targets hyperpigmentation and tanning with botanical active exfoliators and vitamin C complexes.</p>
+            </div>
+            <div class="service-meta">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> 60 Mins</span>
+              <button class="btn btn-gold-outline" style="padding: 8px 18px; font-size: 0.7rem;" onclick="openBookingModal('Whitening Facial')">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Row Item 4 -->
+        <div class="service-item-row reveal">
+          <div class="service-item-image" style="background-image: url('images/salon_interior.png');"></div>
+          <div class="service-item-details">
+            <div>
+              <div class="service-item-header">
+                <h4>Acne Purifying Facial</h4>
+                <span class="service-price">PKR 5,500</span>
+              </div>
+              <p class="service-desc">Deep clearing treatment with salicylic acid and tea tree extracts to calm inflammation and unclog sebum buildups.</p>
+            </div>
+            <div class="service-meta">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> 50 Mins</span>
+              <button class="btn btn-gold-outline" style="padding: 8px 18px; font-size: 0.7rem;" onclick="openBookingModal('Acne Treatment')">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- General Beauty Services Section -->
+  <section id="beauty">
+    <div class="container">
+      <div class="section-header">
+        <span>Essential Care</span>
+        <h2>Beauty Treatments</h2>
+      </div>
+      
+      <div class="services-list-grid">
+        <!-- Service Row Item 1 -->
+        <div class="service-item-row reveal" style="background: var(--luxury-gray);">
+          <div class="service-item-image" style="background-image: url('images/hero_bg.png');"></div>
+          <div class="service-item-details">
+            <div>
+              <div class="service-item-header">
+                <h4>Luxury Manicure & Pedicure</h4>
+                <span class="service-price">PKR 4,500</span>
+              </div>
+              <p class="service-desc" style="color: var(--text-muted);">Soothe hands and feet with scrub therapies, warm wax masks, nail shaping, and OPI luxury lacquer.</p>
+            </div>
+            <div class="service-meta">
+              <span class="service-duration" style="color: var(--white);"><i class="fa-regular fa-clock"></i> 70 Mins</span>
+              <button class="btn btn-primary" style="padding: 8px 18px; font-size: 0.7rem;" onclick="openBookingModal('Mani Pedi')">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Row Item 2 -->
+        <div class="service-item-row reveal" style="background: var(--luxury-gray);">
+          <div class="service-item-image" style="background-image: url('images/hero_bg.png');"></div>
+          <div class="service-item-details">
+            <div>
+              <div class="service-item-header">
+                <h4>Waxing & Threading Care</h4>
+                <span class="service-price">PKR 3,000</span>
+              </div>
+              <p class="service-desc" style="color: var(--text-muted);">Hygiene-focused Rica waxing and precise eyebrow shaping using organic threading fibers.</p>
+            </div>
+            <div class="service-meta">
+              <span class="service-duration" style="color: var(--white);"><i class="fa-regular fa-clock"></i> 40 Mins</span>
+              <button class="btn btn-primary" style="padding: 8px 18px; font-size: 0.7rem;" onclick="openBookingModal('Waxing')">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>KASHI</h3>
+        <span>Beauty Salon</span>
+        <p>Premium salon and high-end bridal studio located in Lahore, Pakistan. Dedicated to excellence, hygiene, and timeless beauty.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/kashibeautician/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/kashibeautician" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@kashibeautysalon" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services & Packages</a></li>
+          <li><a href="bridal.html">Bridal Studio</a></li>
+          <li><a href="catalogue.html">Makeup Catalogue</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Other Pages</h4>
+        <ul class="footer-links">
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="team.html">Professional Team</a></li>
+          <li><a href="pricing.html">Pricing Tables</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="blog.html">Beauty Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p><i class="fa-solid fa-location-dot" style="color: var(--primary-gold); margin-right: 10px;"></i>Shop #50, Block H-2, Phase 2 Johar Town, Lahore, 54782, Pakistan</p>
+        <p><i class="fa-solid fa-phone" style="color: var(--primary-gold); margin-right: 10px;"></i>+92 313 4747538</p>
+        <p><i class="fab fa-whatsapp" style="color: var(--primary-gold); margin-right: 10px;"></i>WhatsApp Booking: +92 313 4747538</p>
+        <p><i class="fa-solid fa-clock" style="color: var(--primary-gold); margin-right: 10px;"></i>11:00 AM - 09:00 PM (Daily)</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2026 Kashi Beauty Salon. All Rights Reserved. Crafted with Luxury & Excellence.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/923134747538" class="floating-whatsapp" target="_blank" aria-label="Book on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Shared Booking Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <h3>Luxury Reservation</h3>
+      <p>Reserve your premium slot. Details will compile into a direct WhatsApp message to our reception desk.</p>
+      <form id="salonBookingForm">
+        <div class="form-group">
+          <label for="modalName">Your Name *</label>
+          <input type="text" id="modalName" class="form-control" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="modalPhone">Phone Number *</label>
+          <input type="tel" id="modalPhone" class="form-control" placeholder="e.g. +92 300 1234567" required>
+        </div>
+        <div class="form-group">
+          <label for="modalService">Select Service *</label>
+          <select id="modalService" class="form-control" required>
+            <option value="" disabled selected>Select a luxury service...</option>
+            <option value="Bridal Makeup Package">Bridal Makeup Package</option>
+            <option value="Engagement Makeup">Engagement Makeup</option>
+            <option value="Reception Makeup">Reception Makeup</option>
+            <option value="Party Makeup">Party Makeup / Soft Glam</option>
+            <option value="Hair Styling & Cut">Hair Styling & Cut</option>
+            <option value="Hair Color / Highlights">Hair Color / Balayage / Highlights</option>
+            <option value="Hydra Facial Treatment">Hydra Facial Treatment</option>
+            <option value="Luxury Manicure & Pedicure">Luxury Manicure & Pedicure</option>
+            <option value="General Beauty Spa Care">General Beauty Services</option>
+          </select>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div class="form-group">
+            <label for="modalDate">Preferred Date *</label>
+            <input type="date" id="modalDate" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="modalTime">Preferred Time *</label>
+            <input type="time" id="modalTime" class="form-control" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="modalNotes">Special Notes</label>
+          <textarea id="modalNotes" class="form-control" rows="3" placeholder="Any specific requirements or questions?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Send Reservation Details to WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

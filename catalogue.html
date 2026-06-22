@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Makeup Lookbook & Catalogue | Kashi Beauty Salon Lahore</title>
+  <meta name="description" content="Browse Kashi's luxury makeup catalogue. Filter signature looks: HD Bridal, reception glam, engagement glow, bold glam, and soft party makeovers in Lahore.">
+  <meta name="keywords" content="Best Makeup Artist Lahore, Soft Glam Lahore, HD Bridal Makeup Pakistan, Kashi Lookbook, Bridal Trends Johar Town">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <nav class="header-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        KASHI
+        <span>Beauty Salon</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="bridal.html">Bridal Studio</a></li>
+        <li><a href="catalogue.html" class="active">Catalogue</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn btn-gold-outline" onclick="openBookingModal()">Book Appointment</button>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <ul class="nav-links-mobile">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="bridal.html">Bridal Studio</a></li>
+      <li><a href="catalogue.html">Catalogue</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><button class="btn btn-primary" onclick="openBookingModal()" style="margin-top: 15px; width: 100%;">Book Appointment</button></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" style="height: 50vh; background-image: linear-gradient(rgba(13,13,13,0.85), rgba(13,13,13,0.85)), url('images/bridal_makeup.png');">
+    <div class="hero-content">
+      <span class="hero-tagline reveal">The Lookbook Collection</span>
+      <h1 class="reveal" style="font-size: 3rem;">Makeup Catalogue</h1>
+      <p class="hero-subtitle reveal">Explore our premium portfolios and find your signature inspiration</p>
+    </div>
+  </section>
+
+  <!-- Catalogue Filter Section -->
+  <section class="bg-light">
+    <div class="container">
+      
+      <!-- Filter Controls -->
+      <div class="filter-container reveal">
+        <button class="filter-btn active" data-filter="all">All Looks</button>
+        <button class="filter-btn" data-filter="bridal">Bridal looks</button>
+        <button class="filter-btn" data-filter="engagement">Engagement / Nikkah</button>
+        <button class="filter-btn" data-filter="party">Party Glam</button>
+        <button class="filter-btn" data-filter="hd">HD Makeup</button>
+        <button class="filter-btn" data-filter="soft">Soft Glam</button>
+        <button class="filter-btn" data-filter="bold">Bold Glam</button>
+      </div>
+
+      <!-- Catalogue Grid -->
+      <div class="catalogue-grid">
+        
+        <!-- Look 1 -->
+        <div class="catalogue-item reveal" data-category="bridal hd" style="transition: all 0.3s ease;">
+          <div class="catalogue-img-box">
+            <img src="images/bridal_makeup.png" alt="Signature HD Bride Look">
+          </div>
+          <div class="catalogue-info">
+            <span class="catalogue-category">Bridal &bull; HD Makeup</span>
+            <h4>Signature Royal Bride</h4>
+            <p>Traditional deep red glam paired with flawless HD coverage and signature gold highlighting.</p>
+            <button class="btn btn-primary" style="width: 100%; font-size: 0.75rem; padding: 10px;" onclick="openBookingModal('Signature Royal Bride')">Book This Look</button>
+          </div>
+        </div>
+
+        <!-- Look 2 -->
+        <div class="catalogue-item reveal" data-category="engagement soft" style="transition: all 0.3s ease;">
+          <div class="catalogue-img-box">
+            <img src="images/hero_bg.png" alt="Dewy Nikkah Glam Look">
+          </div>
+          <div class="catalogue-info">
+            <span class="catalogue-category">Engagement &bull; Soft Glam</span>
+            <h4>Dewy Nikkah Radiance</h4>
+            <p>Luminous blush shades with subtle champagne gold glitter eyes, styled for daylight events.</p>
+            <button class="btn btn-primary" style="width: 100%; font-size: 0.75rem; padding: 10px;" onclick="openBookingModal('Dewy Nikkah Radiance')">Book This Look</button>
+          </div>
+        </div>
+
+        <!-- Look 3 -->
+        <div class="catalogue-item reveal" data-category="party bold" style="transition: all 0.3s ease;">
+          <div class="catalogue-img-box">
+            <img src="images/hair_styling.png" alt="Sultry Smokey Party Look">
+          </div>
+          <div class="catalogue-info">
+            <span class="catalogue-category">Party Glam &bull; Bold Glam</span>
+            <h4>Sultry Bronze Smokey</h4>
+            <p>Dramatic dark bronze smokey eyes paired with a nude matte lip, optimized for evening events.</p>
+            <button class="btn btn-primary" style="width: 100%; font-size: 0.75rem; padding: 10px;" onclick="openBookingModal('Sultry Bronze Smokey')">Book This Look</button>
+          </div>
+        </div>
+
+        <!-- Look 4 -->
+        <div class="catalogue-item reveal" data-category="bridal bold" style="transition: all 0.3s ease;">
+          <div class="catalogue-img-box">
+            <img src="images/bridal_makeup.png" alt="Barat Crimson Glam Look">
+          </div>
+          <div class="catalogue-info">
+            <span class="catalogue-category">Bridal &bull; Bold Glam</span>
+            <h4>Barat Crimson Majesty</h4>
+            <p>A classic, high-intensity crimson lip, heavy lash definition, and deep cut-crease eyes.</p>
+            <button class="btn btn-primary" style="width: 100%; font-size: 0.75rem; padding: 10px;" onclick="openBookingModal('Barat Crimson Majesty')">Book This Look</button>
+          </div>
+        </div>
+
+        <!-- Look 5 -->
+        <div class="catalogue-item reveal" data-category="party soft" style="transition: all 0.3s ease;">
+          <div class="catalogue-img-box">
+            <img src="images/hero_bg.png" alt="Soft Pastel Party Look">
+          </div>
+          <div class="catalogue-info">
+            <span class="catalogue-category">Party Glam &bull; Soft Glam</span>
+            <h4>Rose Gold Pastel Glow</h4>
+            <p>Air-light makeup styling featuring soft rose gold eyelids and high gloss lips.</p>
+            <button class="btn btn-primary" style="width: 100%; font-size: 0.75rem; padding: 10px;" onclick="openBookingModal('Rose Gold Pastel Glow')">Book This Look</button>
+          </div>
+        </div>
+
+        <!-- Look 6 -->
+        <div class="catalogue-item reveal" data-category="engagement hd" style="transition: all 0.3s ease;">
+          <div class="catalogue-img-box">
+            <img src="images/salon_interior.png" alt="Modern Engagement Glow">
+          </div>
+          <div class="catalogue-info">
+            <span class="catalogue-category">Engagement &bull; HD Makeup</span>
+            <h4>Modern Sheen Reception</h4>
+            <p>A sleek contour base, sharp winged eyeliner, and neutral peach lip styling.</p>
+            <button class="btn btn-primary" style="width: 100%; font-size: 0.75rem; padding: 10px;" onclick="openBookingModal('Modern Sheen Reception')">Book This Look</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>KASHI</h3>
+        <span>Beauty Salon</span>
+        <p>Premium salon and high-end bridal studio located in Lahore, Pakistan. Dedicated to excellence, hygiene, and timeless beauty.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/kashibeautician/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/kashibeautician" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@kashibeautysalon" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services & Packages</a></li>
+          <li><a href="bridal.html">Bridal Studio</a></li>
+          <li><a href="catalogue.html">Makeup Catalogue</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Other Pages</h4>
+        <ul class="footer-links">
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="team.html">Professional Team</a></li>
+          <li><a href="pricing.html">Pricing Tables</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="blog.html">Beauty Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p><i class="fa-solid fa-location-dot" style="color: var(--primary-gold); margin-right: 10px;"></i>Shop #50, Block H-2, Phase 2 Johar Town, Lahore, 54782, Pakistan</p>
+        <p><i class="fa-solid fa-phone" style="color: var(--primary-gold); margin-right: 10px;"></i>+92 313 4747538</p>
+        <p><i class="fab fa-whatsapp" style="color: var(--primary-gold); margin-right: 10px;"></i>WhatsApp Booking: +92 313 4747538</p>
+        <p><i class="fa-solid fa-clock" style="color: var(--primary-gold); margin-right: 10px;"></i>11:00 AM - 09:00 PM (Daily)</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2026 Kashi Beauty Salon. All Rights Reserved. Crafted with Luxury & Excellence.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/923134747538" class="floating-whatsapp" target="_blank" aria-label="Book on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Shared Booking Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <h3>Luxury Reservation</h3>
+      <p>Reserve your premium slot. Details will compile into a direct WhatsApp message to our reception desk.</p>
+      <form id="salonBookingForm">
+        <div class="form-group">
+          <label for="modalName">Your Name *</label>
+          <input type="text" id="modalName" class="form-control" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="modalPhone">Phone Number *</label>
+          <input type="tel" id="modalPhone" class="form-control" placeholder="e.g. +92 300 1234567" required>
+        </div>
+        <div class="form-group">
+          <label for="modalService">Select Service *</label>
+          <select id="modalService" class="form-control" required>
+            <option value="" disabled selected>Select a luxury service...</option>
+            <option value="Bridal Makeup Package">Bridal Makeup Package</option>
+            <option value="Engagement Makeup">Engagement Makeup</option>
+            <option value="Reception Makeup">Reception Makeup</option>
+            <option value="Party Makeup">Party Makeup / Soft Glam</option>
+            <option value="Hair Styling & Cut">Hair Styling & Cut</option>
+            <option value="Hair Color / Highlights">Hair Color / Balayage / Highlights</option>
+            <option value="Hydra Facial Treatment">Hydra Facial Treatment</option>
+            <option value="Luxury Manicure & Pedicure">Luxury Manicure & Pedicure</option>
+            <option value="General Beauty Spa Care">General Beauty Services</option>
+          </select>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div class="form-group">
+            <label for="modalDate">Preferred Date *</label>
+            <input type="date" id="modalDate" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="modalTime">Preferred Time *</label>
+            <input type="time" id="modalTime" class="form-control" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="modalNotes">Special Notes</label>
+          <textarea id="modalNotes" class="form-control" rows="3" placeholder="Any specific requirements or questions?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Send Reservation Details to WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

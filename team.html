@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Our Beauty Professionals | Kashi Beauty Salon Lahore</title>
+  <meta name="description" content="Meet our certified stylists, award-winning makeup artists, and skin care specialists at Kashi Beauty Salon Johar Town Lahore. Dedicated to luxury care.">
+  <meta name="keywords" content="Best Makeup Artist Lahore, Stylists Johar Town, Skincare Expert Lahore, Kashi Salon Stylists">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <nav class="header-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        KASHI
+        <span>Beauty Salon</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="bridal.html">Bridal Studio</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="team.html" class="active">Team</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn btn-gold-outline" onclick="openBookingModal()">Book Appointment</button>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <ul class="nav-links-mobile">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="bridal.html">Bridal Studio</a></li>
+      <li><a href="catalogue.html">Catalogue</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><button class="btn btn-primary" onclick="openBookingModal()" style="margin-top: 15px; width: 100%;">Book Appointment</button></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" style="height: 50vh; background-image: linear-gradient(rgba(13,13,13,0.85), rgba(13,13,13,0.85)), url('images/hero_bg.png');">
+    <div class="hero-content">
+      <span class="hero-tagline reveal">The Artists</span>
+      <h1 class="reveal" style="font-size: 3rem;">Meet Our Team</h1>
+      <p class="hero-subtitle reveal">Certified experts passionate about elevating your natural beauty</p>
+    </div>
+  </section>
+
+  <!-- Team Grid Section -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span>Artistry & Expertise</span>
+        <h2>Our Salon Specialists</h2>
+      </div>
+      
+      <div class="team-grid">
+        
+        <!-- Member 1 -->
+        <div class="team-card reveal">
+          <div class="team-member-img">
+            <div class="team-member-img-placeholder" style="background-image: url('images/hero_bg.png');"></div>
+          </div>
+          <div class="team-info">
+            <h4>Kashi</h4>
+            <span class="team-designation">Founder & Master Makeup Artist</span>
+            <p class="team-bio">15+ years of experience crafting signature bridal makeovers. Certified internationally in HD cosmetics and airbrush contouring.</p>
+            <ul class="team-socials">
+              <li><a href="https://www.instagram.com/kashibeautician" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.facebook.com/kashibeautician/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="team-card reveal">
+          <div class="team-member-img">
+            <div class="team-member-img-placeholder" style="background-image: url('images/hair_styling.png');"></div>
+          </div>
+          <div class="team-info">
+            <h4>Maria Shah</h4>
+            <span class="team-designation">Senior Hair Stylist</span>
+            <p class="team-bio">10+ years specializing in complex balayage coloring, modern precision cuts, and organic keratin hair repair therapies.</p>
+            <ul class="team-socials">
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="team-card reveal">
+          <div class="team-member-img">
+            <div class="team-member-img-placeholder" style="background-image: url('images/salon_interior.png');"></div>
+          </div>
+          <div class="team-info">
+            <h4>Dr. Sana Javed</h4>
+            <span class="team-designation">Dermal Therapist & Skincare Expert</span>
+            <p class="team-bio">8+ years of expertise in clinical facials, custom chemical peeling, advanced acne treatments, and premium Hydra Facials.</p>
+            <ul class="team-socials">
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="team-card reveal">
+          <div class="team-member-img">
+            <div class="team-member-img-placeholder" style="background-image: url('images/bridal_makeup.png');"></div>
+          </div>
+          <div class="team-info">
+            <h4>Farah Malik</h4>
+            <span class="team-designation">Nail Art & Lash Stylist</span>
+            <p class="team-bio">6+ years of creating custom gel nail structures, 3D lash mapping overlays, and premium hygiene pedicures.</p>
+            <ul class="team-socials">
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>KASHI</h3>
+        <span>Beauty Salon</span>
+        <p>Premium salon and high-end bridal studio located in Lahore, Pakistan. Dedicated to excellence, hygiene, and timeless beauty.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/kashibeautician/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/kashibeautician" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@kashibeautysalon" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services & Packages</a></li>
+          <li><a href="bridal.html">Bridal Studio</a></li>
+          <li><a href="catalogue.html">Makeup Catalogue</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Other Pages</h4>
+        <ul class="footer-links">
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="team.html">Professional Team</a></li>
+          <li><a href="pricing.html">Pricing Tables</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="blog.html">Beauty Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p><i class="fa-solid fa-location-dot" style="color: var(--primary-gold); margin-right: 10px;"></i>Shop #50, Block H-2, Phase 2 Johar Town, Lahore, 54782, Pakistan</p>
+        <p><i class="fa-solid fa-phone" style="color: var(--primary-gold); margin-right: 10px;"></i>+92 313 4747538</p>
+        <p><i class="fab fa-whatsapp" style="color: var(--primary-gold); margin-right: 10px;"></i>WhatsApp Booking: +92 313 4747538</p>
+        <p><i class="fa-solid fa-clock" style="color: var(--primary-gold); margin-right: 10px;"></i>11:00 AM - 09:00 PM (Daily)</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2026 Kashi Beauty Salon. All Rights Reserved. Crafted with Luxury & Excellence.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/923134747538" class="floating-whatsapp" target="_blank" aria-label="Book on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Shared Booking Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <h3>Luxury Reservation</h3>
+      <p>Reserve your premium slot. Details will compile into a direct WhatsApp message to our reception desk.</p>
+      <form id="salonBookingForm">
+        <div class="form-group">
+          <label for="modalName">Your Name *</label>
+          <input type="text" id="modalName" class="form-control" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="modalPhone">Phone Number *</label>
+          <input type="tel" id="modalPhone" class="form-control" placeholder="e.g. +92 300 1234567" required>
+        </div>
+        <div class="form-group">
+          <label for="modalService">Select Service *</label>
+          <select id="modalService" class="form-control" required>
+            <option value="" disabled selected>Select a luxury service...</option>
+            <option value="Bridal Makeup Package">Bridal Makeup Package</option>
+            <option value="Engagement Makeup">Engagement Makeup</option>
+            <option value="Reception Makeup">Reception Makeup</option>
+            <option value="Party Makeup">Party Makeup / Soft Glam</option>
+            <option value="Hair Styling & Cut">Hair Styling & Cut</option>
+            <option value="Hair Color / Highlights">Hair Color / Balayage / Highlights</option>
+            <option value="Hydra Facial Treatment">Hydra Facial Treatment</option>
+            <option value="Luxury Manicure & Pedicure">Luxury Manicure & Pedicure</option>
+            <option value="General Beauty Spa Care">General Beauty Services</option>
+          </select>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div class="form-group">
+            <label for="modalDate">Preferred Date *</label>
+            <input type="date" id="modalDate" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="modalTime">Preferred Time *</label>
+            <input type="time" id="modalTime" class="form-control" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="modalNotes">Special Notes</label>
+          <textarea id="modalNotes" class="form-control" rows="3" placeholder="Any specific requirements or questions?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Send Reservation Details to WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
